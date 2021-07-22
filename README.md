@@ -27,13 +27,13 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./screenshot.JPG)
 
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution](https://your-solution-url.com)
+- Live Site URL: [front-end-mentor](https://akhilts.github.io/front-end-mentor/)
 
 ## My process
 

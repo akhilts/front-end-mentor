@@ -1,0 +1,122 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color:black;
+}
+.container{
+    display:flex;
+    position:relative;
+    align-items: stretch;
+    justify-content: center;
+    padding:10rem;
+    flex-direction: row;
+}
+.left{
+    width:50%;
+    
+    background:#1c1937;
+    color:white;
+    height:30rem;
+    border-radius:1% 0 0 1%;
+}
+.text{
+    padding:4.7rem 5.6rem 5.2rem 5rem;
+}
+.right{
+    display:block;
+    width:50%;
+    height:100%;
+    position:relative;
+    
+}
+.small-p{
+    /* font-weight:100;*/
+    font-size:0.8rem; 
+    /* color:#555771; */
+    color: rgba(255,255,255,0.5);
+    line-height:1.5rem;
+}
+.big-p{
+    font-size:1.2rem; 
+    color: rgb(255,255,255);
+}
+img{
+    padding:0;
+    border:0;
+    margin:0;
+    height:29.95rem;
+    border-radius:0 1% 1% 0;
+    max-width:100%;
+    object-fit: fill;
+}
+
+.image1{
+    display:block;
+}
+.image2{
+    display:none;
+}
+.right::before{
+    content:'';
+    background-color:rgba(179, 48, 219,0.5);
+    width:100%;
+    position:absolute;
+    z-index:100;
+    height:29.95rem;
+}
+.footer{
+    display:flex;
+    justify-content: space-between;
+    margin-top:5rem;
+}
+
+.tile>.small-p{
+    margin-top:0rem;
+    text-transform: uppercase;
+}
+.tile>.big-p{
+    margin-bottom:0rem;
+    text-transform: uppercase;  
+}
+.violet{
+    color:rgba(179, 48, 219);
+}
+
+@media screen and (max-width: 1080px){
+    .container{
+        flex-direction: column;
+        padding:8vw;
+    }
+    .left{
+        order:2;
+        height:100%;
+        width:100%;
+    }
+    .right{
+        order:1;
+        width:100%;
+    }
+    .text{
+        padding:6vw 8vw;
+    }
+    img{
+        width:100%;
+        object-fit:fill;
+    }
+    .image1{
+        display:none;
+    }
+    .image2{
+        display:block;
+    }
+}
+@media screen and (min-width: 1500px){
+    img{
+        width:100%;
+        object-fit:cover;
+        margin-right:0;
+    }
+}
